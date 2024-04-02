@@ -14,8 +14,8 @@ function shortcut(str1, str2) {
 // Test cases
 console.log(shortcut("Amnesty", "International")); // Output: 'ai'
 console.log(shortcut("Hello", "world")); // Output: 'hw'
-console.log(shortcut("''", "International")); // Output: ''
-console.log(shortcut("Amnesty", "''")); // Output: ''
+console.log(shortcut("", "International"); // Output: ''
+console.log(shortcut("Amnesty", ""); // Output: ''
 
 
 
