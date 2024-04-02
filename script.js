@@ -4,19 +4,16 @@ function shortcut(str1, str2) {
         return '';
     }
     
-    // Get the initial letters of the strings and convert them to lowercase
-    const initialLetters = str1.toLowerCase().charAt(0) + str2.toLowerCase().charAt(0);
+    // Get the initial letters of the strings and convert them to uppercase
+    const initialLetters = str1.toLowerCase().charAt(0).toUpperCase() + str2.toLowerCase().charAt(0).toUpperCase();
     
     return initialLetters;
 }
-
-
 // Test cases
-console.log(shortcut("Amnesty", "International")); // Output: 'ai'
-console.log(shortcut("Hello", "world")); // Output: 'hw'
-console.log(shortcut("", "International"); // Output: ''
-console.log(shortcut("Amnesty", ""); // Output: ''
-
+console.log(shortcut("Amnesty", "International")); // Output: 'AI'
+console.log(shortcut("Hello", "world")); // Output: 'Hw'
+console.log(shortcut("'", "'International")); // Output: ''
+console.log(shortcut("'Amnesty", "'")); // Output: ''
 
 
 
