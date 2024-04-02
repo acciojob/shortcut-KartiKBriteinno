@@ -4,11 +4,12 @@ function shortcut(str1, str2) {
         return '';
     }
     
-    // Get the initial letters of the strings and convert them to uppercase
-    const initialLetters = str1.toLowerCase().charAt(0).toUpperCase() + str2.toLowerCase().charAt(0).toUpperCase();
+    // Get the initial letters of the strings and convert them to lowercase
+    const initialLetters = str1.toLowerCase().charAt(0) + str2.toLowerCase().charAt(0);
     
     return initialLetters;
 }
+
 
 // Test cases
 console.log(shortcut("Amnesty", "International")); // Output: 'ai'
