@@ -5,7 +5,7 @@ function shortcut(str1, str2) {
     }
     
     // Get the initial letters of the strings and convert them to uppercase
-    const initialLetters = str1.charAt(0).toUpperCase() + str2.charAt(0).toUpperCase();
+    const initialLetters = str1.toLowerCase().charAt(0).toUpperCase() + str2.toLowerCase().charAt(0).toUpperCase();
     
     return initialLetters;
 }
@@ -15,6 +15,7 @@ console.log(shortcut("Amnesty", "International")); // Output: 'AI'
 console.log(shortcut("Hello", "world")); // Output: 'Hw'
 console.log(shortcut("", "International")); // Output: ''
 console.log(shortcut("Amnesty", "")); // Output: ''
+
 
 
 // Do not change the code below.
