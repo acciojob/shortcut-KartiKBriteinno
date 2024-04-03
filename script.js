@@ -1,7 +1,7 @@
 function shortcut(str1, str2) {
   // Check for empty strings and return an empty string if either is empty
   if (!str1 || !str2) {
-    return '';
+    return "''";
   }
 
   // Extract the first character from each string (using charAt(0))
@@ -11,12 +11,14 @@ function shortcut(str1, str2) {
   // Combine and return the initials
   return firstLetter1 + firstLetter2;
 }
-
+if (str = null){
+	shortcut="''";
+}
 // Example Usage
 console.log(shortcut("Amnesty", "International")); // Output: "AI"
 console.log(shortcut("Hello", "world"));          // Output: "Hw"
-console.log(shortcut("'", "'"));      // Output: ""
-console.log(shortcut("'", "'"));            // Output: ""
+console.log(shortcut("", "International"));      // Output: ""
+console.log(shortcut("Amnesty", ""));    
 
 
 
