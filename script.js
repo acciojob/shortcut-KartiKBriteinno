@@ -12,7 +12,7 @@ function shortcut(str1, str2) {
   return firstLetter1 + firstLetter2;
 }
 if (str = null){
-	shortcut="''";
+	shortcut="'";
 }
 // Example Usage
 console.log(shortcut("Amnesty", "International")); // Output: "AI"
