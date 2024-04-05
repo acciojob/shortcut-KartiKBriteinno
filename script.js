@@ -13,9 +13,6 @@ console.log(shortcut("", "International") || "''");  // Output: ''
 console.log(shortcut("Amnesty", "") || "''");  // Output: ''
 
 
-
-
-
 // Do not change the code below.
 const s1 = prompt("Enter s1:");
 const s2 = prompt("Enter s2:");
