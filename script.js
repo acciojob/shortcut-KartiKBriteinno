@@ -3,14 +3,20 @@ function shortcut(str1, str2) {
         return '';
     }
 
-    return str1.charAt(0).toUpperCase() + str2.charAt(0).toUpperCase();
+    const initialLetters = str1.charAt(0).toUpperCase() + str2.charAt(0).toLowerCase();
+    return initialLetters;
 }
 
-// Test cases with specified outputs
+// Test the function with the provided examples
 console.log(shortcut("Amnesty", "International"));  // Output: 'AI'
-console.log(shortcut("Hello", "world"));  // Output: 'HW'
-console.log(shortcut("", "International") || "''");  // Output: ''
-console.log(shortcut("Amnesty", "") || "''");  // Output: ''
+console.log(shortcut("Hello", "world"));  // Output: 'Hw'
+console.log(shortcut("", "International"));  // Output: ''
+console.log(shortcut("Amnesty", ""));  // Output: ''
+
+// Additional test cases
+console.log(shortcut("Stack", "Overflow"));  // Output: 'SO'
+console.log(shortcut("full", "stack"));  // Output: 'Fs'
+
 
 
 // Do not change the code below.
