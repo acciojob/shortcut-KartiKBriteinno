@@ -1,12 +1,14 @@
-function shortcut(str1, str2) {
-    if (!str1 || !str2) {
-        return '';
-    }
+function shortcut(s1, s2) {
+  // your code here
+	function shortcut(str1,str2){
+	if(str1.length == 0 || str2.length == 0){
+		return "''";
+	}
+	const initial = str1[0].toUpperCase() + str2[0].toUpperCase()
+	return initial;
 
-    const initialLetters = str1.charAt(0).toUpperCase() + str2.charAt(0).toLowerCase();
-    return initialLetters;
 }
-
+}
 // Test the function with the provided examples
 console.log(shortcut("Amnesty", "International"));  // Output: 'AI'
 console.log(shortcut("Hello", "world"));  // Output: 'Hw'
