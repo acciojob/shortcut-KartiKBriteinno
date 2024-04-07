@@ -1,23 +1,16 @@
 function shortcut(s1, s2) {
-  // your code here
-	function shortcut(str1,str2){
-	if(str1.length == 0 || str2.length == 0){
-		return "''";
-	}
-	const initial = str1[0].toUpperCase() + str2[0].toUpperCase()
-	return initial;
-
-}
+  // your code here 
+if (s1.length === 0 || s2.length === 0) {
+    return "''";
+  } else {
+    return s1[0] + s2[0];
+  }
 }
 // Test the function with the provided examples
 console.log(shortcut("Amnesty", "International"));  // Output: 'AI'
 console.log(shortcut("Hello", "world"));  // Output: 'Hw'
 console.log(shortcut("", "International"));  // Output: ''
 console.log(shortcut("Amnesty", ""));  // Output: ''
-
-// Additional test cases
-console.log(shortcut("Stack", "Overflow"));  // Output: 'SO'
-console.log(shortcut("full", "stack"));  // Output: 'Fs'
 
 
 
